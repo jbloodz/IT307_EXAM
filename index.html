@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cp-style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="home"></div>
+    <div class="main-nav-bar">
+        <div class="left-nav">
+            <img class="title-img" src="https://i.pinimg.com/736x/41/d2/4e/41d24ec19fb72d0da4d1ac5b82cb6026.jpg">
+            <div class="title">MyPortfolio</div>
+        </div>
+        <div class="right-nav">
+            <div onclick="menu()" class="menuPic" ></div>
+            <div class="coll-nav" id="menu">
+                <div><a id="btn-1" class="HV btn-1" href="#home">Home</a></div>
+                <div><a id="btn-2"  class="HV btn-2" href="#about">About</a></div>
+                <div><a id="btn-3"  class="HV btn-3" href="#project">Project</a></div>
+                <div><a id="btn-4"  class="HV hire-btn" href="#contact">Hire Me</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-view">
+        <div class="left-view">
+            <img class="human-img" src="JJ.jpg">
+            <img class="small-img" src="https://png.pngtree.com/png-clipart/20230321/original/pngtree-genuine-100-percent-best-quality-vector-images-png-image_8998942.png">
+        </div>
+        <div class="right-view">
+            <div class="main-title">Explor My <br>Portfolio</div>
+            <div class="small-title">Discover My Experince as a IT Student</div>
+            <div class="main-btn">
+                <div><a id="btn-5"  class="main-btn-1" href="#about">Resume</a></div>
+                <div><a id="btn-6"  class="main-btn-2" href="#contact">Contact</a></div>
+            </div>
+            <div class="small-title-2">"Learn as if you will live forever, live like you will die tomorrow." </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="ani-box">
+            <div class="ani-over">
+                <div class="pic1"></div>
+                <div class="pic2"></div>
+                <div class="pic3"></div>
+            </div>
+            
+        </div>
+        <div class="about-flout">
+            <h1 class="about-title">
+                About ME
+            </h1>
+            <div class="about-text">
+                I am a third-year Information Technology student with a strong foundation in programming, networking, and systems administration. Passionate about technology and innovation, I am continuously expanding my skills in areas such as software development, cybersecurity, and cloud computing. I am adept at working with programming languages like Java, Python, and C++, and have hands-on experience with database management and systems troubleshooting.
+I have developed problem-solving and teamwork skills through academic projects and internships, and I am eager to apply my knowledge in real-world settings. I am actively seeking opportunities to further enhance my technical expertise, collaborate on impactful projects, and contribute to the IT industry. My goal is to leverage my technical skills and passion for technology to solve complex problems and drive innovation.
+            </div>
+        </div>
+    </div>
+
+    <div class="project" id="project">
+        <div class="project-set">
+            <img class="project-img-1" src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Symbol.png">
+            <div class="project-text">
+                <h2>Java script</h2>
+                <div class="pro-text"> Im a Java developer with a strong foundation in object-oriented programming. I focus on writing clean, efficient code and building basic applications. I’m familiar with key Java concepts such as classes, methods, loops, and conditionals, and I'm eager to apply my skills to develop reliable software solutions.</div>
+            </div>
+        </div>
+
+        <div class="project-set">
+            <img class="project-img-2" src="https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo-2011.png">
+            <div class="project-text">
+                <h2>CSS</h2>
+                <div class="pro-text">Im a front-end developer with experience in using CSS to create clean and responsive web designs. I focus on styling layouts, working with basic CSS properties like colors, typography, and positioning, and ensuring websites are visually appealing and easy to navigate.</div>
+            </div>
+            <img class="project-img-1 hide" src="https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo-2011.png">
+        </div>
+
+        <div class="project-set">
+            <img class="project-img-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png">
+            <div class="project-text">
+                <h2>Python</h2>
+                <div class="pro-text">Im a Python developer with experience in building scalable applications and solving real-world problems. I specialize in web development using Django and Flask, as well as data analysis with Pandas and NumPy. I focus on writing clean, efficient code and continuously exploring Pythons ecosystem to enhance my skills.</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="con-title">Contact</div>
+        <div class="email">
+            <input type="email" placeholder="Email Address">
+        </div>
+        <div class="message">
+            <textarea placeholder="Your massage..."></textarea>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2024 World Citi Colleges Antipolo City | Designed by Tom Carlo Ballesca
+    </div>
+    <script>
+        act = false;
+        //const btn_pos = [true, false];
+
+        let floatBox = document.querySelector(".coll-nav");
+        let color_btn_1 = document.querySelector("#btn-1");
+        let color_btn_2 = document.querySelector("#btn-2");
+        let color_btn_3 = document.querySelector("#btn-3");
+        function menu() {
+            if (act==false) {
+                floatBox.style.visibility = "visible";
+                act = true;
+            } else{
+                floatBox.style.visibility = "hidden";
+                act = false;
+            }    
+	    }
+
+        window.addEventListener("scroll", (event) => {
+            let scroll = this.scrollY;
+
+            if (scroll <= 300) {
+                //console.log(scroll)
+                color_btn_1.style.color = "rgb(255, 247, 0)";
+                color_btn_2.style.color = "darkgray";
+                color_btn_3.style.color = "darkgray";
+            }else if (scroll >= 600 && scroll <=1200) {
+                //console.log(scroll)
+                color_btn_1.style.color = "darkgray";
+                color_btn_2.style.color = "rgb(255, 247, 0)";
+                color_btn_3.style.color = "darkgray";
+            } else if (scroll >= 1400 && scroll <=3500){
+                color_btn_1.style.color = "darkgray";
+                color_btn_2.style.color = "darkgray";
+                color_btn_3.style.color = "rgb(255, 247, 0)";
+            }
+            else if (scroll >= 3600){
+                color_btn_1.style.color = "darkgray";
+                color_btn_2.style.color = "darkgray";
+                color_btn_3.style.color = "darkgray";
+            }
+        });
+    </script>
+</body>
+</html>

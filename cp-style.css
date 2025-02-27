@@ -1,0 +1,137 @@
+@media screen and (max-width: 426px) {
+    body {
+        /* background-color: black; */
+      }
+
+      .menuPic{
+		background-image: url(menu.png);
+		background-size: 100% 100%;
+		height: 5vh;
+		width: 40px;
+		margin-right:1vh;
+	}
+
+    .coll-nav{
+		font-size: 2vh;
+		width: 40vw;
+		visibility: hidden;
+		position:absolute;
+        display: block;
+		left: 60%;
+		top: 85px;
+	}
+
+    .HV{
+        display: block;
+        padding: 20px;
+        cursor: none;
+        border: 1px solid lightgray;
+        color: darkgray;
+        background-color: white;
+    }
+	
+	.HV:hover{
+        color: aliceblue;
+        background-color: darkblue;
+	}
+
+    /* MAIN VIEW */
+    .main-view{
+        display: block;
+        padding: 0 0;
+    }
+
+    .small-img{
+        left: 0;
+        top: 300px;
+        width: 120px;;
+        height:120px;
+    }
+
+    .human-img{
+        border-radius: 0%;
+        height: auto;
+        width: 100%;
+    }
+
+    .right-view{
+        padding: 0 20px;
+    }
+
+    .small-title, .main-btn, .small-title-2{
+        margin: 50px 0;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .main-title{
+        font-size: 60px;
+    }
+    
+    .main-btn{
+        display: grid;
+        gap: 70px;
+        text-align: center;
+    }
+
+    .main-btn-1, .main-btn-2{
+        padding: 20px 70px;
+        cursor: none;
+    }
+
+    /* ABOUT VIEW */
+
+    .about-flout{
+        padding: 50px;
+    }
+
+    .about-text{
+        font-size: 20px;
+        margin: 0;
+        overflow: scroll;
+        height: 400px;
+
+    }
+
+    /* PROJECT VIEW */
+
+    .project{
+        padding: 50px 0;
+    }
+
+    .project-set{
+        padding-bottom: 50px;
+        display: block;
+    }
+
+    .project-text h2{
+        padding: 20px 0;
+        font-size: 25px;
+    }
+
+    .project-img-1{
+        height: auto;
+        width: 100%;
+        border-radius: 0%;
+        box-shadow: 5px 7px 5px #aaaaaa7c;
+    }
+
+    .hide{
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+
+    .project-img-2{
+        visibility: visible;
+        height: auto;
+        width: 100%;
+        border-radius: 0%;
+        box-shadow: 5px 7px 5px #aaaaaa7c;
+    }
+
+    .pro-text{
+        padding: 10px 20px;
+        font-size: 17px;
+    }
+}
